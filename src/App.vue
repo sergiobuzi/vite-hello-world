@@ -1,5 +1,14 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
+<script>
+import AppTitle from './components/AppTitle.vue'
+import AppHero from './components/AppHero.vue'
+
+export default {
+
+components: {
+  AppTitle,
+  AppHero
+}
+}
 </script>
 
 <template>
@@ -11,7 +20,8 @@ import HelloWorld from './components/HelloWorld.vue'
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <AppTitle />
+  <AppHero />
 </template>
 
 <style scoped>
